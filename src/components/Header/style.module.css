@@ -1,0 +1,53 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 72px;
+  padding: 0 20px;
+  background-image: url('/header.png');
+  background-size: cover;
+  background-position-y: bottom;
+  z-index: 1030;
+}
+
+.navbar.detached {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #3d31bc;
+}
+
+.navbar .container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.navbar-logo {
+  height: 31px;
+  margin-top: 20px;
+}
+
+.navbar-links {
+  position: absolute;
+  top: 23px;
+  right: 0;
+  display: inline-block;
+}
+
+.navbar-links a {
+  box-sizing: border-box;
+  padding: 8px;
+  margin-left: 25px;
+  border-bottom: 2px solid transparent;
+  font-size: 14px;
+  color: white;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.navbar-links a:hover, .navbar-links .cur {
+  border-color: #00cade;
+  color: #00cade;
+}

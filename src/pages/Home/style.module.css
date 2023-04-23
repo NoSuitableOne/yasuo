@@ -1,0 +1,134 @@
+.home {
+  position: relative;
+  padding-top: 72px;
+}
+
+.carousel {
+  height: calc(100vh - 144px); 
+}
+.carouselCaption {
+  bottom: 136px;
+}
+
+.carousel-indicators {
+  bottom: 100px;
+}
+
+.descWrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 496px;
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+}
+
+.btnWrapper {
+  
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+.btnLeft {
+  border-radius: 200px;
+  margin-right: 16px;
+  padding: 8px 32px;
+  border-color: #088ef0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#34a5f8), to(#088ef0));
+  background: linear-gradient(#34a5f8, #088ef0);
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+}
+.btnLeft:hover .btnLeft:focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(#42abf8), to(#0888e6));
+  background: linear-gradient(top, #42abf8, #0888e6);
+  border-color: #088ef0;
+  cursor: pointer;
+}
+
+.btnMid {
+  border-radius: 200px;
+  margin-right: 16px;
+  padding: 8px 32px;
+  border-color: #ff2939;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff5c69), to(#ff2939));
+  background: linear-gradient(#ff5c69, #ff2939);
+  cursor: pointer;
+  color: #fff;
+}
+.btnMid:hover .btnMid:focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff6c77), to(#ff1f30));
+  background: linear-gradient(top, #ff6c77, #ff1f30);
+  border-color: #ff2939;
+  cursor: pointer;
+}
+
+.btnRight {
+  border-radius: 200px;
+  margin-left: 16px;
+  padding: 8px 32px;
+  border-color: #665ce6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9088ec), to(#665ce6));
+  background: linear-gradient(#9088ec, #665ce6);
+  cursor: pointer;
+  color: #fff;
+}
+.btnRight:hover .btnRight:focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9c95ef), to(#5e53e4));
+  background: linear-gradient(top, #9c95ef, #5e53e4);
+  border-color: #665ce6;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  padding-top: 16px;
+}
+
+.downloadBtn {
+  background-color: #f7f7f7;
+  color: #333;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  width: 172px;
+  border-radius: 200px;
+  padding: 8px 16px;
+}
+
+.btnLogo {
+  width: 36px;
+  margin-right: 12px;
+}
+
+.btnLeft:hover .dropdown {
+  display: flex;
+  flex-direction: column;
+} 
+
+
+.marqueeWrapper {
+  height: 320px;
+  padding: 20px 0;
+}
+
+.marqueeImgWrpper {
+  padding: 0 14px;
+}
+
+.marqueeImg {
+  height: 260px;
+}
