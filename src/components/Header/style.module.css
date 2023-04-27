@@ -16,7 +16,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: #3d31bc;
+  background-color: #f4a533;
 }
 
 .navbar .container {
@@ -26,8 +26,8 @@
 }
 
 .navbar-logo {
-  height: 31px;
-  margin-top: 20px;
+  height: 72px;
+  /* margin-top: 20px; */
 }
 
 .navbar-links {
@@ -48,6 +48,6 @@
 }
 
 .navbar-links a:hover, .navbar-links .cur {
-  border-color: #00cade;
-  color: #00cade;
+  border-color: #f4a533;
+  color: #f4a533;
 }

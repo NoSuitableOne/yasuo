@@ -4,7 +4,7 @@
 }
 
 .carousel {
-  height: calc(100vh - 144px); 
+  height: 794px; 
 }
 .carouselCaption {
   bottom: 136px;
@@ -82,6 +82,7 @@
   background: linear-gradient(#9088ec, #665ce6);
   cursor: pointer;
   color: #fff;
+  position: relative;
 }
 .btnRight:hover .btnRight:focus {
   background: -webkit-gradient(linear, left top, left bottom, from(#9c95ef), to(#5e53e4));
@@ -90,7 +91,7 @@
   cursor: pointer;
 }
 
-.dropdown {
+.dropdown, .dropdown2 {
   display: none;
   position: absolute;
   top: 40px;
@@ -119,6 +120,11 @@
   flex-direction: column;
 } 
 
+.btnRight:hover .dropdown2 {
+  display: flex;
+  flex-direction: column;
+}
+
 
 .marqueeWrapper {
   height: 320px;
@@ -131,4 +137,12 @@
 
 .marqueeImg {
   height: 260px;
+}
+
+.combineWrapper {
+  height: 640px;
+}
+.combineImg {
+  width: 100%;
+  height: 100%;
 }

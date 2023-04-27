@@ -1,0 +1,76 @@
+{
+  "tabs": [
+    {
+      "name": "武器",
+      "tooltip": "武器武器武器武器",
+      "img": [{
+        "src": "http://player.zyluffy.cn/images/H001.jpg",
+        "key": 0
+      }, {
+        "src": "http://player.zyluffy.cn/images/H002.png",
+        "key": 1
+      }, {
+        "src": "http://player.zyluffy.cn/images/H003.png",
+        "key": 2
+      }, {
+        "src": "http://player.zyluffy.cn/images/H004.jpg",
+        "key": 3
+      }, {
+        "src": "http://player.zyluffy.cn/images/H005.jpg",
+        "key": 4
+      }, {
+        "src": "http://player.zyluffy.cn/images/H007.jpg",
+        "key": 5
+      }, {
+        "src": "http://player.zyluffy.cn/images/S003.png",
+        "key": 6
+      }, {
+        "src": "http://player.zyluffy.cn/images/S004.png",
+        "key": 7
+      }, {
+        "src": "http://player.zyluffy.cn/images/S005.png",
+        "key": 8
+      }] 
+    },
+    {
+      "name": "服饰",
+      "tooltip": "服饰服饰--服饰",
+      "img": [{
+        "src": "http://player.zyluffy.cn/images/H006.jpg",
+        "key": 0
+      }, {
+        "src": "http://player.zyluffy.cn/images/H007.jpg",
+        "key": 1
+      }, {
+        "src": "http://player.zyluffy.cn/images/S003.png",
+        "key": 2
+      }, {
+        "src": "http://player.zyluffy.cn/images/S004.png",
+        "key": 3
+      }, {
+        "src": "http://player.zyluffy.cn/images/S005.png",
+        "key": 4
+      }] 
+    },
+    {
+      "name": "坐骑",
+      "tooltip": "坐骑 坐骑 坐骑 坐骑",
+      "img": [{
+        "src": "http://player.zyluffy.cn/images/S006.png",
+        "key": 0
+      }, {
+        "src": "http://player.zyluffy.cn/images/S007.png",
+        "key": 1
+      }, {
+        "src": "http://player.zyluffy.cn/images/S008.png",
+        "key": 2
+      }, {
+        "src": "http://player.zyluffy.cn/images/S009.png",
+        "key": 3
+      }, {
+        "src": "http://player.zyluffy.cn/images/S010.png",
+        "key": 4
+      }] 
+    }
+  ]
+}

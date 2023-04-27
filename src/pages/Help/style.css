@@ -1,3 +1,11 @@
+.help_doc {
+  min-height: 100vh;
+  background-image: url('../../assets/images/bg.png');
+  background-size: contain;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
 .help {
   margin-top: 18px;
   padding: 24px 32px;
@@ -6,8 +14,9 @@
 
 .help_content {
   width: 980px;
-  margin: 97px auto 0;
+  margin: 72px auto 0;
   padding-top: 0;
+  background-color: #fff;
 }
 
 .help_doc .content .title {

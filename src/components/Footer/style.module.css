@@ -1,59 +1,109 @@
 .footer {
-  height: 180px;
-  display: flex;
-  padding: 16px 32px;
-  color: #fff;
-  background-image: url('/footer.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #000;
+  background-image: url('./footer.png');
   background-position-y: center;
+  color: #ccc;
+  padding: 40px 0;
+  height: 410px;
 }
 
-.container {
-  flex: 1;
+.main {
+  margin: 0 auto;
+  display: flex;
+  width: 1010px;
+  height: 100%;
+}
+
+.content {
+  padding-right: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
-.linkWrapper {
-  font-size: 16px;
+.content .linkWrapper {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.content .linkWrapper .title {
+  margin-right: 16px;
+}
+
+.content .linkWrapper .link {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.content .linkWrapper .link a {
+  text-decoration: none;
+}
+
+.content .text {
   flex: 1;
+  display: flex;
+  flex-direction: column; 
+  padding-bottom: 12px;
+  width: 520px;
+}
+
+.content .text .warn {
+  background-color: yellow;
+  color: red;
+  margin-bottom: 24px;
+}
+
+.content .text .info {
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.content .text .tip {
+  font-size: 12px;
+  text-align: center;
+}
+
+.content .importWrapper {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.title {
-  margin-right: 24px;
-}
-
-.link {
-  margin-right: 24px;
-}
-
-.license {
+.content .importWrapper .license {
   display: flex;
   align-items: center;
-  min-height: 42px;
+  padding-bottom: 12px;
 }
 
-.policy {
-  font-size: 12px;
-  color: #dfdfdf;
-  margin-right: 60px;
-} 
-.icp {
-  font-size: 12px;
-  color: #dfdfdf;
+.content .importWrapper .copyright {
+  display: flex;
+  align-items: center;
+  padding-bottom: 12px;
+}
+
+.content .importWrapper .licenseImg {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
 }
 
 .qrcodeWrapper {
+  width: 450px;
   display: flex;
-  min-width: 330px;
-  /* align-items: flex-end; */
   justify-content: space-evenly;
+  padding: 40px 0;
 }
-.qrcode {
-  width: 100px;
+
+.qrcodeWrapper .qrcode {
+  width: 140px;
+  height: 100%;
+}
+
+.qrcodeWrapper .qrcode img {
+  width: 140px;
+  height: 250px;
 }

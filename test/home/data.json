@@ -1,0 +1,44 @@
+{
+  "title": "永远的林可二", // 首页描述
+  "content": "这里是一些描述，描述 这里是一些描述，描述", // 首页内容
+  "download": {
+    "tianyiyun": "http://player.zyluffy.cn/images/S028.png", // 下载 天翼云
+    "baiduyun": "http://player.zyluffy.cn/images/S028.png" //  下载 百度云
+  },
+  "modDownload": {
+    "tianyiyun": "http://player.zyluffy.cn/images/S030.png", // 下载mod 天翼云
+    "baiduyun": "http://player.zyluffy.cn/images/S030.png" // 下载mod 百度云
+  },
+  "tutorial": "http://player.zyluffy.cn/images/S034.png", // 安装教程
+  "carousels": [ // 轮播图
+    {
+      "url": "http://player.zyluffy.cn/images/S027.png" // 每个轮播图的链接，想放几个就加几个链接 
+    }, {
+      "url": "http://player.zyluffy.cn/images/S028.png"
+    }, {
+      "url": "http://player.zyluffy.cn/images/S029.png"
+    }, {
+      "url": "http://player.zyluffy.cn/images/S030.png"
+    }
+  ],
+  "marquees": [ // 下面的小图滚动，里面的一个数组就是一行
+    [{
+      "url": "http://player.zyluffy.cn/images/H001.jpg" // 每一条就是一张小图的链接
+    }, {
+      "url": "http://player.zyluffy.cn/images/H002.png"
+    }, {
+      "url": "http://player.zyluffy.cn/images/H003.png"
+    }, {
+      "url": "http://player.zyluffy.cn/images/H004.jpg"
+    }, {
+      "url": "http://player.zyluffy.cn/images/H005.jpg"
+    }, {
+      "url": "http://player.zyluffy.cn/images/H007.jpg"
+    }]
+  ],
+  "combines": [ // 拼接大图， 多配几张大图就多加几个链接，格式不要变
+    {
+      "url": "http://player.zyluffy.cn/images/sy01.jpg" 
+    }
+  ]
+}

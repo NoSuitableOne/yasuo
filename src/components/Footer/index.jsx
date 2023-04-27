@@ -1,45 +1,57 @@
-import { useEffect, useState } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react'
+import request from '@/utils/request'
 import styles from './style.module.css';
 
-export default function Header (props) {
-
+function Footer() {
+  const [ data, setData ] = useState({});
+  
   useEffect(() => {
-
+    try {
+      request('/test/footer/data.json', 'GET', v => setData(v));
+    } catch (e) {
+      console.error(e);
+    }
   }, []);
 
   return (
     <div className={styles.footer}>
-      <div className={styles.container}>
-        <div className={styles.linkWrapper}>
-          <span className={styles.title}>友情链接</span>
-          <a className={styles.link} href="//weishi.360.cn" target="_blank">安全卫士</a>
-          <a className={styles.link} href="//browser.360.cn/" target="_blank">安全浏览器</a>
-          <a className={styles.link} href="//sd.360.cn/" target="_blank">360杀毒</a>
-          <a className={styles.link} href="//weishi.360.cn/qudongdashi/index.html" target="_blank">驱动大师</a>
-          <a className={styles.link} href="http://chrome.360.cn/" target="_blank">极速浏览器</a>
-          <a className={styles.link} href="//weishi.360.cn/jijiuxiang/index.html" target="_blank">系统急救箱</a>
-          <a className={styles.link} href="//www.360.cn/desktop/" target="_blank">桌面助手</a>
-          <a className={styles.link} href="//safe.online.360.cn/?src=360yasuo" target="_blank">360团队版</a>
-        </div>
-        <div className={styles.license}>
-          <div className={styles.policy}>
-            Copyright © 2xx5-20x3 UUU All Rights Reserved
-            sdd中心隐私权政策 后ICP证q101pd号
+      <div className={styles.main}>
+        <div className={styles.content}>
+          <div className={styles.linkWrapper}>
+            <div className={styles.title}>友情链接</div>
+            {data?.friendLink?.map(ele => (
+              <div key={ele.url} className={styles.link}><a href={ele?.url} target='blank'>{ele?.name}</a></div>
+            ))}
           </div>
-          <div className={styles.icp}>
-            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000dd002asa006" target="_blank">
-              x公网安备 1100000200ssddq6号
-            </a>
+          <div className={styles.text}>
+            <div className={styles.warn} dangerouslySetInnerHTML={{ __html: data?.text?.warn }} />
+            <div className={styles.info} dangerouslySetInnerHTML={{ __html: data?.text?.info }} />
+            <div className={styles.tip} dangerouslySetInnerHTML={{ __html: data?.text?.tip }} />
+          </div>
+          <div className={styles.importWrapper}>
+            <div className={styles.license}>
+              <img className={styles.licenseImg} src={'/license.png'} alt="license" />
+              {data?.license}  
+            </div>
+            <div className={styles.copyright}>
+              {data?.copyright}         
+            </div>
           </div>
         </div>
-      </div>
-
-      <div className={styles.qrcodeWrapper}>
-        <img className={styles.qrcode} src="/wechat.png" alt="微信二维码" />
-        <img className={styles.qrcode} src="/alipay.png" alt="支付宝二维码" />
-        <img className={styles.qrcode} src="/blibli.png" alt="B站二维码" />
+        <div className={styles.qrcodeWrapper}>
+          <div className={styles.qrcode} style={{ marginRight: '24px' }}>
+            <img className={styles.img} src={data?.blibliQrcode} />  
+          </div>
+          <div className={styles.qrcode}>
+            <img className={styles.img} src={data?.alipayQrcode} />
+          </div>
+          <div className={styles.qrcode}>
+            <img className={styles.img} src={data?.wechatQrcode} />
+          </div>
+        </div>
       </div>
     </div>
   );
 }
+
+export default Footer;
