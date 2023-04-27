@@ -35,8 +35,7 @@ function Update(props) {
 
   return (
     <div className="update_doc">
-      {/* <img className={'img left_img'} src={leftImg} alt={"林克"} />
-      <img className={'img right_img'} src={rightImg} alt={"林可尔"} />  */}
+      <div className='bgImg'></div>
       <div className="content">
         <div className="log">
           <p className="title">

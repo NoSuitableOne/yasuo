@@ -15,6 +15,7 @@ function Help (props) {
 
   return (
     <div className="help_doc">
+      <div className='bgImg'></div>
       <div className="content help_content">
         <p className="title">
           <span>帮助</span>

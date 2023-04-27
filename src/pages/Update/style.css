@@ -1,8 +1,19 @@
 .update_doc {
   min-height: 100vh;
   position: relative;
+  background-size: cover;
+}
+
+
+.bgImg {
+  position: fixed;
+  top: 72px;
   background-image: url('../../assets/images/bg.png');
   background-size: cover;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .img {
@@ -29,6 +40,8 @@
   padding-bottom: 96px;
   line-height: 2em;
   color: #666;
+  z-index: 2;
+  position: relative;
 }
 
 .log {

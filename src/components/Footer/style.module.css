@@ -5,6 +5,8 @@
   color: #ccc;
   padding: 40px 0;
   height: 410px;
+  position: relative;
+  z-index: 1030;
 }
 
 .main {
