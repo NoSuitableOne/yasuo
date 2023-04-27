@@ -2,6 +2,7 @@
   background-color: #000;
   background-image: url('/images/footer.png');
   background-position-y: center;
+  background-size: cover;
   color: #ccc;
   padding: 40px 0;
   height: 410px;
