@@ -22,10 +22,26 @@
 .help_doc .content .title {
   padding-left: 110px;
   margin-bottom: 0;
+  padding-top: 32px;
+  padding-left: 140px;
 }
 
 .help ul {
   list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.help ul li {
+  text-align: left;
+  border: 1px solid #0095fc;
+  border-radius: 4px;
+  margin-right: 20px;
+  padding: 0 8px;
+  cursor: pointer;
+  min-width: 30%;
+  margin-bottom: 12px;
 }
 
 .help a {
@@ -54,6 +70,10 @@ dt::before {
 
 dd {
   font-size: 14px;
+}
+
+dl dd img {
+  width: 570px;
 }
 
 .help_footer {

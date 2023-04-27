@@ -16,7 +16,7 @@
   },
   "license": "浙 备 013547009-1 号",
   "copyright": "版权属于 xxx 2023 - 2023",
-  "blibliQrcode": "/blibli.png",
-  "alipayQrcode": "/alipay.png",
-  "wechatQrcode": "/wechat.png"
+  "blibliQrcode": "/images/blibli.png",
+  "alipayQrcode": "/images/alipay.png",
+  "wechatQrcode": "/images/wechat.png"
 }

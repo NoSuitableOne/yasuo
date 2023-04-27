@@ -30,7 +30,7 @@ function Footer() {
           </div>
           <div className={styles.importWrapper}>
             <div className={styles.license}>
-              <img className={styles.licenseImg} src={'/license.png'} alt="license" />
+              <img className={styles.licenseImg} src={'/images/license.png'} alt="license" />
               {data?.license}  
             </div>
             <div className={styles.copyright}>

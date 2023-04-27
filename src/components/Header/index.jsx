@@ -12,7 +12,7 @@ export default function Header (props) {
   return (
     <div className={styles.navbar}>
       <div className={styles.container}>
-        <img src="/logo.png" alt="360压缩" className={styles["navbar-logo"]} />
+        <img src="/images/logo.png" alt="小小TV" className={styles["navbar-logo"]} />
         <div className={styles["navbar-links"]}>
           <NavLink to={"/"}><span className={currentPage === '/'? styles.cur : ''}>首页</span></NavLink>
           <NavLink to={"/highlight"}><span className={currentPage === '/highlight'? styles.cur : ''}>精彩内容</span></NavLink>
