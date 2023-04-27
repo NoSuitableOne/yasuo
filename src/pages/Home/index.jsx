@@ -41,28 +41,32 @@ function Home (props) {
                 className="d-block w-100"
                 src={ele.url}
                 alt="First slide"
-                style={{ height: 'calc(100vh - 144px)' }}
+                style={{ height: '780px' }}
               />
             </Carousel.Item>
           ))}
         </Carousel>
         <div className={styles.descWrapper}>
           <div className={styles.infoWrapper}>
-            <img  />
-            <p>{data?.content}</p>
+            <img className={styles.title} src={'/images/hometitle.png'} />
+            <p className={styles.p} dangerouslySetInnerHTML={{ __html: data?.content }} />
           </div>
           <div className={styles.btnWrapper}>
             <div className={styles.btnLeft}>
               一键下载
               <div className={styles.dropdown}>
-                <div className={styles.downloadBtn} onClick={()=>download(data?.download?.tianyiyun)}>
-                  <img src="./tianyiyun.jpg" alt="天翼云logo" className={styles.btnLogo} />
-                  天翼云网盘
-                </div>
-                <div className={styles.downloadBtn} onClick={()=>download(data?.download?.baiduyun)}>
-                  <img src="./baiduyun.jpeg" alt="百度云logo" className={styles.btnLogo} />
-                  百度云网盘
-                </div>
+                {data?.download?.tianyiyun?
+                  <div className={styles.downloadBtn} onClick={()=>download(data?.download?.tianyiyun)}>
+                    <img src="./tianyiyun.jpg" alt="天翼云logo" className={styles.btnLogo} />
+                    天翼云网盘
+                  </div> 
+                : null}
+                {data?.download?.baiduyun?
+                  <div className={styles.downloadBtn} onClick={()=>download(data?.download?.baiduyun)}>
+                    <img src="./baiduyun.jpeg" alt="百度云logo" className={styles.btnLogo} />
+                    百度云网盘
+                  </div>
+                : null}
               </div>
             </div>
             <div className={styles.btnMid} onClick={()=>download(data?.tutorial)}>
@@ -71,14 +75,18 @@ function Home (props) {
             <div className={styles.btnRight}>
               MOD下载
               <div className={styles.dropdown2}>
-                <div className={styles.downloadBtn} onClick={()=>download(data?.modDownload?.tianyiyun)}>
-                  <img src="./tianyiyun.jpg" alt="天翼云logo" className={styles.btnLogo} />
-                  天翼云网盘
-                </div>
-                <div className={styles.downloadBtn} onClick={()=>download(data?.modDownload?.baiduyun)}>
-                  <img src="./baiduyun.jpeg" alt="百度云logo" className={styles.btnLogo} />
-                  百度云网盘
-                </div>
+                {data?.modDownload?.tianyiyun?
+                  <div className={styles.downloadBtn} onClick={()=>download(data?.modDownload?.tianyiyun)}>
+                    <img src="./tianyiyun.jpg" alt="天翼云logo" className={styles.btnLogo} />
+                    天翼云网盘
+                  </div> : null
+                }
+                {data?.modDownload?.baiduyun?
+                  <div className={styles.downloadBtn} onClick={()=>download(data?.modDownload?.baiduyun)}>
+                    <img src="./baiduyun.jpeg" alt="百度云logo" className={styles.btnLogo} />
+                    百度云网盘
+                  </div> : null
+                }
               </div>
             </div>
           </div>

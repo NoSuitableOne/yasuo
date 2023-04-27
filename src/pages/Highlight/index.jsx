@@ -52,10 +52,10 @@ function Highlight (props) {
 
   useEffect(() => {
     clearEffect();
-    timerRef.current = setInterval(() => {
-      activeRef.current = activeRef.current < smallData.length - 1? activeRef.current + 1 : 0;
-      go();
-    }, 5000);
+    // timerRef.current = setInterval(() => {
+    //   activeRef.current = activeRef.current < smallData.length - 1? activeRef.current + 1 : 0;
+    //   go();
+    // }, 5000);
   }, [smallData?.[0]?.src]);
 
   function clearEffect () {
@@ -131,6 +131,7 @@ function Highlight (props) {
         <div className={styles.rightWrapper}>
           <img className={styles.img} src={smallData.length && (active === smallData.length - 1? smallData?.[0].src : smallData?.[active + 1].src)} />
         </div>
+        <p className={styles.text} dangerouslySetInnerHTML={{ __html: smallData?.[active]?.text || '' }} />
       </div>
       <div className={styles.smallWrapper}>
         <div className={styles.smallCousal}>

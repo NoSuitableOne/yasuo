@@ -7,7 +7,7 @@ function Footer() {
   
   useEffect(() => {
     try {
-      request('/test/footer/data.json', 'GET', v => setData(v));
+      request('/backend/footer/data.json', 'GET', v => setData(v));
     } catch (e) {
       console.error(e);
     }

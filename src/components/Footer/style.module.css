@@ -1,6 +1,6 @@
 .footer {
   background-color: #000;
-  background-image: url('./footer.png');
+  background-image: url('/images/footer.png');
   background-position-y: center;
   color: #ccc;
   padding: 40px 0;

@@ -5,7 +5,7 @@
   right: 0;
   height: 72px;
   padding: 0 20px;
-  background-image: url('/header.png');
+  background-image: url('/images/header.png');
   background-size: cover;
   background-position-y: bottom;
   z-index: 1030;

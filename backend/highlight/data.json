@@ -5,7 +5,8 @@
       "tooltip": "武器武器武器武器",
       "img": [{
         "src": "http://player.zyluffy.cn/images/H001.jpg",
-        "key": 0
+        "key": 0,
+        "text": "文字描述。文字描述文字描述. 文字描述."
       }, {
         "src": "http://player.zyluffy.cn/images/H002.png",
         "key": 1
@@ -21,15 +22,6 @@
       }, {
         "src": "http://player.zyluffy.cn/images/H007.jpg",
         "key": 5
-      }, {
-        "src": "http://player.zyluffy.cn/images/S003.png",
-        "key": 6
-      }, {
-        "src": "http://player.zyluffy.cn/images/S004.png",
-        "key": 7
-      }, {
-        "src": "http://player.zyluffy.cn/images/S005.png",
-        "key": 8
       }] 
     },
     {
