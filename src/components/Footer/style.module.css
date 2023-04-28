@@ -126,7 +126,7 @@
 
 .qrcodeWrapper .awardWrapper {
   height: 90px;
-
+  margin-bottom: 12px;
 }
 
 .qrcodeWrapper .awardWrapper .img {
