@@ -22,7 +22,7 @@ function Help (props) {
           <span>Help</span>
         </p>
         <div className="help">
-          <ul>
+          <ul className='helpTitle'>
             {questions.map((ele, index) => (
               <li key={ele.key}>
                 <a target="_parent" href={`#${ele.key}`}>{index + 1}.{ele.title}</a>

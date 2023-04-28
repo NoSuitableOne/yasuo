@@ -22,6 +22,11 @@
   background: #fff;
 }
 
+.help .helpTitle {
+  border-bottom: 1px solid #0095fc;
+  padding-bottom: 20px;
+}
+
 .help_content {
   width: 980px;
   margin: 72px auto 0;

@@ -1,0 +1,27 @@
+[
+  {
+    "path": "/",
+    "name": "首页",
+    "type": "inner"
+  },
+  {
+    "path": "/highlight",
+    "name": "精彩内容",
+    "type": "inner"
+  },
+  {
+    "path": "/update",
+    "name": "更新内容",
+    "type": "inner"
+  },
+  {
+    "path": "/help",
+    "name": "疑难解答",
+    "type": "inner"
+  },
+  {
+    "path": "http://player.zyluffy.cn/download/",
+    "name": "资源下载",
+    "type": "outer"
+  }
+]

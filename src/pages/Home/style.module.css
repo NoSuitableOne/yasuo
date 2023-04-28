@@ -85,7 +85,6 @@
 
 .btnRight {
   border-radius: 200px;
-  margin-left: 16px;
   padding: 8px 32px;
   border-color: #665ce6;
   background: -webkit-gradient(linear, left top, left bottom, from(#9088ec), to(#665ce6));
