@@ -15,6 +15,9 @@ function Footer() {
 
   return (
     <div className={styles.footer}>
+      <div className={styles.leftImgWrapper}>
+        <img className={styles.img} src={'/images/footer_left.png'} alt="" />
+      </div>
       <div className={styles.main}>
         <div className={styles.content}>
           <div className={styles.linkWrapper}>
@@ -24,9 +27,11 @@ function Footer() {
             ))}
           </div>
           <div className={styles.text}>
+            <div className={styles.tip}>
+              <img className={styles.img} src={"/images/footer_tip.png"} />
+            </div>
             <div className={styles.warn} dangerouslySetInnerHTML={{ __html: data?.text?.warn }} />
             <div className={styles.info} dangerouslySetInnerHTML={{ __html: data?.text?.info }} />
-            <div className={styles.tip} dangerouslySetInnerHTML={{ __html: data?.text?.tip }} />
           </div>
           <div className={styles.importWrapper}>
             <div className={styles.license}>
@@ -39,16 +44,21 @@ function Footer() {
           </div>
         </div>
         <div className={styles.qrcodeWrapper}>
-          <div className={styles.qrcode} style={{ marginRight: '24px' }}>
-            <img className={styles.img} src={data?.blibliQrcode} />  
+          <div className={styles.awardWrapper}>
+            <img className={styles.img} src={"/images/footer_award.png"} alt={"求打赏"} />
           </div>
-          <div className={styles.qrcode}>
-            <img className={styles.img} src={data?.alipayQrcode} />
-          </div>
-          <div className={styles.qrcode}>
-            <img className={styles.img} src={data?.wechatQrcode} />
+          <div className={styles.imgWrapper}>
+            <div className={styles.qrcode}>
+              <img className={styles.img} src={data?.alipayQrcode} />
+            </div>
+            <div className={styles.qrcode}>
+              <img className={styles.img} src={data?.wechatQrcode} />
+            </div>
           </div>
         </div>
+      </div>
+      <div className={styles.rightImgWrapper}>
+        <img className={styles.img} src={'/images/footer_right.png'} alt="" />
       </div>
     </div>
   );

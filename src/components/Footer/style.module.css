@@ -1,13 +1,22 @@
 .footer {
-  background-color: #000;
-  background-image: url('/images/footer.png');
-  background-position-y: center;
-  background-size: cover;
+  background-color: #0d1c2b;
   color: #ccc;
-  padding: 40px 0;
   height: 410px;
+  display: flex;
   position: relative;
   z-index: 1030;
+}
+
+.leftImgWrapper {
+  height: 100%;
+}
+
+.rightImgWrapper {
+  height: 100%;
+}
+
+.leftImgWrapper .img, .rightImgWrapper .img {
+  height: 100%;
 }
 
 .main {
@@ -15,6 +24,7 @@
   display: flex;
   width: 1010px;
   height: 100%;
+  padding: 20px 0;
 }
 
 .content {
@@ -28,7 +38,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .content .linkWrapper .title {
@@ -44,13 +54,16 @@
 
 .content .linkWrapper .link a {
   text-decoration: none;
+  
+}
+.content .linkWrapper .link a:hover {
+  color: #f4a533;
 }
 
 .content .text {
   flex: 1;
   display: flex;
-  flex-direction: column; 
-  padding-bottom: 12px;
+  flex-direction: column;
   width: 520px;
 }
 
@@ -58,16 +71,26 @@
   background-color: yellow;
   color: red;
   margin-bottom: 24px;
+  text-align: center;
+  display: inline-block;
+  width: 80%;
+  margin: 12px auto;
 }
 
 .content .text .info {
   margin-bottom: 16px;
+  text-align: center;
   flex: 1;
 }
 
 .content .text .tip {
   font-size: 12px;
   text-align: center;
+  height: 90px;
+}
+.content .text .tip .img {
+  width: 100%;
+  height: 100%;
 }
 
 .content .importWrapper {
@@ -79,13 +102,14 @@
 .content .importWrapper .license {
   display: flex;
   align-items: center;
-  padding-bottom: 12px;
+  font-size: 12px;
 }
 
 .content .importWrapper .copyright {
   display: flex;
   align-items: center;
-  padding-bottom: 12px;
+  font-size: 12px;
+  
 }
 
 .content .importWrapper .licenseImg {
@@ -97,16 +121,32 @@
 .qrcodeWrapper {
   width: 450px;
   display: flex;
-  justify-content: space-evenly;
-  padding: 40px 0;
+  flex-direction: column;
 }
 
-.qrcodeWrapper .qrcode {
-  width: 140px;
+.qrcodeWrapper .awardWrapper {
+  height: 90px;
+
+}
+
+.qrcodeWrapper .awardWrapper .img {
+  width: 100%;
   height: 100%;
 }
 
+.qrcodeWrapper .imgWrapper {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.qrcodeWrapper .qrcode {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+}
+
 .qrcodeWrapper .qrcode img {
-  width: 140px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
 }
