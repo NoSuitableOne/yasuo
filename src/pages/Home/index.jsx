@@ -67,6 +67,12 @@ function Home (props) {
                     百度云网盘
                   </div>
                 : null}
+                {data?.download?.kuake?
+                  <div className={styles.downloadBtn} onClick={()=>download(data?.download?.kuake)}>
+                    <img src="/images/kuake.svg" alt="夸克logo" className={styles.btnLogo} />
+                    夸克网盘
+                  </div>
+                : null}
               </div>
             </div>
             <div className={styles.btnMid} onClick={()=>download(data?.tutorial)}>
@@ -87,6 +93,12 @@ function Home (props) {
                     百度云网盘
                   </div> : null
                 }
+                {data?.modDownload?.kuake?
+                  <div className={styles.downloadBtn} onClick={()=>download(data?.modDownload?.kuake)}>
+                    <img src="/images/kuake.svg" alt="夸克logo" className={styles.btnLogo} />
+                    夸克网盘
+                  </div>
+                : null}
               </div>
             </div>
           </div>

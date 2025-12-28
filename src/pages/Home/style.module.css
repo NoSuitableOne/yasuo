@@ -103,9 +103,6 @@
 .dropdown, .dropdown2 {
   display: none;
   position: absolute;
-  top: 40px;
-  left: 0;
-  padding-top: 16px;
 }
 
 .downloadBtn {
@@ -123,15 +120,58 @@
   width: 36px;
   margin-right: 12px;
 }
-
+.btnLeft::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 60px; /* 连接区域的高度，根据实际情况调整 */
+  background: transparent;
+  pointer-events: auto;
+}
+.btnLeft::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 60px; /* 连接区域的高度，根据实际情况调整 */
+  background: transparent;
+  pointer-events: auto;
+}
 .btnLeft:hover .dropdown {
   display: flex;
   flex-direction: column;
-} 
+  right: 128px;
+  top: -60px;
+}
 
+.btnRight::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 60px; /* 连接区域的高度，根据实际情况调整 */
+  background: transparent;
+  pointer-events: auto;
+}
+.btnRight::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 60px; /* 连接区域的高度，根据实际情况调整 */
+  background: transparent;
+  pointer-events: auto;
+}
 .btnRight:hover .dropdown2 {
   display: flex;
   flex-direction: column;
+  left: 137px;
+  top: -60px;
 }
 
 

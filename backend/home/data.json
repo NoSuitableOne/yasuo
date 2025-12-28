@@ -3,11 +3,13 @@
   "content": "这里是一些描述，描述 这里是一些描述，描述。<br />这里是一些描述，描述 这里是一些描述，描述。描述 这里是一些描述。<br />这里是一些描述，描述。",
   "download": {
     "tianyiyun": "http://player.zyluffy.cn/images/S028.png",
-    "baiduyun": "http://player.zyluffy.cn/images/S028.png"
+    "baiduyun": "http://player.zyluffy.cn/images/S028.png",
+    "kuake": "http://player.zyluffy.cn/images/S029.png"
   },
   "modDownload": {
     "tianyiyun": "http://player.zyluffy.cn/images/S030.png", 
-    "baiduyun": "http://player.zyluffy.cn/images/S030.png" 
+    "baiduyun": "http://player.zyluffy.cn/images/S030.png",
+    "kuake": "http://player.zyluffy.cn/images/S030.png" 
   },
   "tutorial": "http://player.zyluffy.cn/images/S034.png",
   "carousels": [
